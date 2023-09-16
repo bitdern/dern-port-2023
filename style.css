@@ -97,6 +97,12 @@ body {
   opacity: 0.9;
 }
 
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
 section {
   min-height: 100vh;
   padding: 10rem 7% 2rem;
@@ -552,8 +558,31 @@ span {
   background: var(--white-color);
   border-radius: 0.8rem;
   border: 0.2rem solid var(--main-color);
+  outline: 0.2rem solid transparent;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  outline-color: var(--white-color);
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
+  color: #333;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .profession-container {
+    height: 85.8rem;
+  }
+
+  .home .profession-container .profession-box {
+    right: -12rem;
+    height: 85.8rem;
+  }
 }
