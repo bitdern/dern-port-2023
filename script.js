@@ -93,8 +93,11 @@ function sendEmail(event) {
   const emailSubject = document.querySelector(".email-subject").value;
   const emailBody = document.querySelector(".email-body").value;
 
-  // Use these variables to customize the mailto link
+  // the variables customize the mailto link
   const mailtoLink = `mailto:acnewell09@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
   window.open(mailtoLink);
+
+  // reset the form & clear its contents after submission
+  event.target.reset();
 }
