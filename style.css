@@ -298,9 +298,11 @@ span {
   gap: 4rem;
 }
 
-/* More specification */
 .about-img img {
-  width: 40vw;
+  width: 30vw;
+  border-radius: 2rem;
+  border-top: 1rem solid var(--main-color);
+  border-bottom: 1rem solid var(--main-color);
 }
 
 .heading {

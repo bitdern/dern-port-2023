@@ -106,7 +106,7 @@
     <!-- Might need to specify about image dimensions -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/derncat.png" alt="" />
+        <img src="images/pmt.JPG" alt="" />
       </div>
 
       <div class="about-content">
@@ -175,7 +175,7 @@
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
+      <h2 class="heading">Proof of <span>Code</span></h2>
 
       <div class="portfolio-container">
         <div class="portfolio-box">
@@ -255,7 +255,7 @@
 
     <!-- testimonial design -->
     <div class="testimonial-container">
-      <h2 class="heading">Client <span>Testimonials</span></h2>
+      <h2 class="heading">My <span>Tech Stack</span></h2>
 
       <div class="testimonial-wrapper">
         <div class="testimonial-box mySwiper">
@@ -310,23 +310,32 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form action="#" onsubmit="sendEmail(event)">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" class="full-name" placeholder="Name" />
+          <input
+            type="email"
+            class="email-address"
+            placeholder="Email Address"
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="number"
+            class="mobile-number"
+            placeholder="Mobile Number"
+          />
+          <input type="text" class="email-subject" placeholder="Subject" />
         </div>
         <textarea
+          class="email-body"
           name=""
           id=""
           cols="30"
           rows="10"
           placeholder="Your Message"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <input type="submit" value="Get in Touch" class="btn" />
       </form>
     </section>
 

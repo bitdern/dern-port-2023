@@ -81,3 +81,20 @@ ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {
   origin: "right",
 });
+
+// opening up user's email client in contact form
+
+function sendEmail(event) {
+  event.preventDefault();
+
+  const fullName = document.querySelector(".full-name").value;
+  const emailAddress = document.querySelector(".email-address").value;
+  const mobileNumber = document.querySelector(".mobile-number").value;
+  const emailSubject = document.querySelector(".email-subject").value;
+  const emailBody = document.querySelector(".email-body").value;
+
+  // Use these variables to customize the mailto link
+  const mailtoLink = `mailto:acnewell09@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+
+  window.open(mailtoLink);
+}
