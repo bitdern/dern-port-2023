@@ -736,6 +736,7 @@ span {
   }
 
   .home-content h3 {
+    align-items: center;
     font-size: 2.6rem;
   }
 
@@ -789,6 +790,7 @@ span {
 
   .home .profession-box .circle {
     position: fixed;
+    align-items: center;
     width: 670px;
     height: 670px;
     z-index: -1;
@@ -800,7 +802,7 @@ span {
     left: 50%;
     right: 0;
     transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-    border-width: 23.9rem;
+    border-width: 10rem;
   }
 
   .about {
@@ -856,7 +858,13 @@ span {
   }
 
   .home {
+    display: flex;
+    align-items: center;
     padding: 0 3% 30rem;
+  }
+
+  .home .profession-container .overlay {
+    margin-top: 10rem;
   }
 
   .home .profession-box .profession:nth-child(1) {
